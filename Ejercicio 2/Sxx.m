@@ -1,5 +1,3 @@
 function  sXX = Sxx(x)
-    mediaX = mean(power(x,2));
-    tamX = size(x);
-    sXX = sum(power(sXX,2))-mediaX;
+    sum(power(x,2)) - power(sum(x),2)/length(x);
 end
